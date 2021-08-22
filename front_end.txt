@@ -1,0 +1,92 @@
+https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/introduction-to-the-front-end
+- HTML: how the webpage is structured
+defines the semantic structure of a document, nothing about visual representation
+headline tags help auto-generate a table of contents for the document
+- CSS: how the page looks
+- JavaScript: how the page functions
+
+
+*** Get started with the web
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files
+- Deal with files 
+store files for one website project in one folder
+name the files in lowcases (avoid case sensitive situations)
+separate words with hyphens, not underscores, no space: my-website
+- A website project: a folder with the following elements 
+1. index.html => homepage content
+2. images folder => all images
+3. style folder => CSS code to style contents
+4. scripts folder => JavaScript code to add interactive functions to the website
+
+
+*** HTML basics (Hypertext Markup Language)
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
+1. What it is and its anatomy
+- Consists of elements, each element wraps different parts of the content to make it appear or act in a certain way
+- An element (3 parts): opening tag, content and closing tag 
+eg: <p>My cat is sleeping</p>
+can also contain an attribute (extra info that doesn't appear in the content) = name (class) + value ("editor-note")
+eg: <p class="editor-note">My cat is sleeping</p>
+- Nest element 2 in element 1
+opening tag 1 => opening tag 2 => closing tag 2 => closing tag 1
+- empty element: doesn't wrap content, no closing tag
+
+2. Images 
+- <img> element embeds an image into the page in the position it appears
+eg: <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+- it has 2 attributes: 
+src (source) = the path to the image file
+alt (alternative) = descriptive text (for visually impaired people or for when the source is changed/incorrect)
+
+3. Marking up the text: essential HTML elements
+- Headings and subheadings: 6 levels <h1> – <h6>
+- Paragraphs: <p> </p>
+- Lists: each item inside (list item) <li>
+Unordered (order doesn't matter): <u1>
+Ordered (order matters): <o1>
+
+4. Links
+add a link <a> (anchor)
+href attribute (hypertext reference): web address of the link
+eg: <a href="https://www.google.com">Google</a>
+
+
+*** CSS basics (Cascading Style Sheets)
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
+1. What it is 
+- a style sheet language, used to style the elements of HTML
+- contains sets of rules
+- structure
+eg: 
+p {
+    color: red;
+    width: 500px;
+}
+p = selector => HTML element name to be styled
+{} wrap 1 rule set
+color: red = declaration => declare 1 rule
+color = property of an HTML element
+red = property value
+; => separate each declaration
+
+2. Fonts and text
+Anything in CSS between /* and */ is a CSS comment
+3. Box model
+padding, the space around the content. In the example below, it is the space around the paragraph text.
+border, the solid line that is just outside the padding.
+margin, the space around the outside of the border.
+
+*** JavaScript basics 
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+1. What it is 
+-  full-fledged dynamic programming language that can add interactivity to a website
+2. Language crash course 
+Variables
+Comments
+Operators
+Conditionals
+Functions
+Events
+3. Example website
+Image changer
+Personalized welcome message

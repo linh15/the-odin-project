@@ -1,0 +1,25 @@
+https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/git-basics
+
+1. Git basic workflow
+- Create a repository on Github
+- Clone the repo to my local computer
+- Create a new file / make changes (modified state)
+- $ git add file => add file to staging area in Git (staging state)
+- $ git commit -m "message" => commit the file (commited satate)
+
+2. Common lines
+- add all file in the current repository
+$ git add .
+
+- check the status of the current repo
+$ git status
+
+- check commit history
+$ git log
+
+- upload the work to Github
+$ git push 
+
+*** origin vs master/main
+- origin = the remote repo to push the work
+- master/main = your current local branch to push to origin

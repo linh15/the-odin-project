@@ -1,0 +1,35 @@
+https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+
+1. Version Control System
+3 types: local (local computer), centralized (central server to different computers) and distributed (Git - server computer vs other computers)
+Git: all clients mirror the whole repository and its history => if a server dies, any client repository can be copied back up to server to restore
+
+
+2. What is Git?
+- Every time you commit, Git takes a picture of all the files at that moment and stores a reference to this snapshot
+=> data = stream of snapshots
+
+- Most operations are local, all history of the project is on your local disk => faster, no need constant network connection
+
+- Git only adds data, after a snapshot is committed to Git => very difficult to lose
+
+- 3 main states that files can live in:
+modified: changed the file but not committed to local database yet
+staged: marked a modified file in its current version 
+committed: data is safely stored in the local database
+
+https://www.youtube.com/watch?v=8oRjP8yj2Wo&ab_channel=GitHubTraining%26Guides
+
+- Git is fast and modern
+- Git provides history of content changes
+- Git facilitates collaborative changes to files
+- Git is easy to use
+
+* Summary:
+- Git 
+works locally, a version control system allows you to track the versions of your project in repositories
+is a technology working in command line 
+- GitHub 
+is a remote hosting system for sharing repositories
+is a website
+has collaborative features: bug tracking, feature requests, task management, project's wiki

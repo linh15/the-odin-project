@@ -1,0 +1,56 @@
+https://webcache.googleusercontent.com/search?q=cache:7rq6J-lQX_UJ:conqueringthecommandline.com/book/basics
+
+https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/command-line-basics-web-development-101
+
+
+1. Home directory
+common to see a tilde (~) in place of the full path for a home directory
+MacBook-Air:~ Khanh_Linh$
+
+
+2. Present working directory
+- to see the current directory where I am: present working directory
+$  pwd
+
+3. List of files 
+- to see all the files and directories in the current directory (list of files), sorted by alphabet
+$ ls
+to see all the files in another directory
+$ ls path
+//eg// $ ls /Users/Khanh_Linh/Downloads
+
+
+4. Links
+- Hard Links
+- Force a link 
+- Symbolic links 
+
+
+5. Change directory (cd)
+- navigate to a directory using a path 
+$ cd path
+//eg// $ cd /Users/Khanh_Linh/Downloads or $ cd ~/Downloads
+the tilde ~ can expand to be the path of home directory
+- navigate up = go back to one directory
+$ cd ..
+- navigate to home directory
+$ cd
+
+
+6. Create directory (mkdir) make directory
+$ mkdir name
+//eg// $ mkdir new-folder
+
+
+7. Copy files
+
+8. Delete files
+
+9. Move files
+
+10. Input output 
+
+*** Create new file
+$ touch file
+//eg// $ touch index.html
+
