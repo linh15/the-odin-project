@@ -1,19 +1,27 @@
 * Why do we separate HTML and CSS?
 HTML is the structure of the page, CSS is the design and styling of the page
 
-* What are classes and IDs (and how are they different)?
 
+1. HTML 
+* What is a div and how are they used?
+div is division element, used to contain other elements for general purposes.
+
+* What are tags?
 
 * What are elements?
 
-* What are tags?
+* What is the “query string” in a URL and what does it do?
+
+* For accessibility in HTML, what is the attribute used to describe an image (on screen readers or if it fails to load)?
+
+* For a responsive website, should it be designed mobile-first or desktop-first?
+
+2. CSS
+* What are classes and IDs (and how are they different)?
 
 * What are attributes?
 
 * What are forms?
-
-* What is a div and how are they used?
-div is division element, used to contain other elements for general purposes.
 
 * What are selectors?
 
@@ -21,7 +29,6 @@ div is division element, used to contain other elements for general purposes.
 
 * What are values?
 
-* What is the “query string” in a URL and what does it do?
 
 * What is the difference between “pixels” and “ems”?
 pixel is the absolute unit. 
@@ -37,12 +44,8 @@ em is relative to the element's font size.
 
 * Why use a CSS reset file?
 
-* For accessibility in HTML, what is the attribute used to describe an image (on screen readers or if it fails to load)?
 
 * What is the difference between CSS Grid and Flexbox?
-
-
-* For a responsive website, should it be designed mobile-first or desktop-first?
 
 
 * Describe the components of the CSS Box Model.
@@ -55,4 +58,4 @@ the point where the website content responds according the width of the device.
 font and text
 
 * What is the !important rule in CSS?
-
+used to override all other styles in CSS to make sure an element has specific CSS
