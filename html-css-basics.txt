@@ -12,6 +12,7 @@ div is division element, used to contain other elements for general purposes.
 * What is the “query string” in a URL and what does it do?
 
 * For accessibility in HTML, what is the attribute used to describe an image (on screen readers or if it fails to load)?
+alternative: alt=""
 
 * For a responsive website, should it be designed mobile-first or desktop-first?
 
@@ -34,8 +35,13 @@ pixel is the absolute unit.
 em is relative to the element's font size. 
 
 * How do CSS styles for a particular element get inherited? i.e. how does an element get its “default” styles?
+an element gets style from these, in this hiarachical order: !important, inline style, id, its latest class, "body" element
+the former overrides the latter, with !important being the most powerful.
 
 * What are two CSS attributes you can change to push an element around on the page?
+padding
+margin
+also: position???
 
 * What are the three different ways to include CSS in your project or use CSS to style a particular element?
 
@@ -64,3 +70,5 @@ used to override all other styles in CSS to make sure an element has specific CS
 <section> - groups related content (like a chapter of a book)
 <article> - groups independent, self-contained content (like a book); works well with blog entries, forum posts, or news articles.
 
+- head element: contains the page's title, meta information, etc.
+- header (in the body): wraps introductory information or navigation links for its parent tag and works well around content that's repeated at the top on multiple pages.
