@@ -1,71 +1,72 @@
 * Why do we separate HTML and CSS?
 HTML is the structure of the page, CSS is the design and styling of the page
 
-1. HTML 
-* What is a div and how are they used?
+* HTML 
+1. What is a div and how are they used?
 div is division element, used to contain other elements for general purposes.
 
-* What are tags?
+2. What are tags?
 
-* What are elements?
+3. What are elements?
 
-* What is the “query string” in a URL and what does it do?
+4. What is the “query string” in a URL and what does it do?
 
-* For accessibility in HTML, what is the attribute used to describe an image (on screen readers or if it fails to load)?
+5. For accessibility in HTML, what is the attribute used to describe an image (on screen readers or if it fails to load)?
 alternative: alt=""
 
-* For a responsive website, should it be designed mobile-first or desktop-first?
-
-2. CSS
-* What are classes and IDs (and how are they different)?
-
-* What are attributes?
-
-* What are forms?
-
-* What are selectors?
-
-* What are properties?
-
-* What are values?
+6. For a responsive website, should it be designed mobile-first or desktop-first?
 
 
-* What is the difference between “pixels” and “ems”?
+* CSS
+1. What are classes and IDs (and how are they different)?
+
+2. What are attributes?
+
+3. What are forms?
+
+4. What are selectors?
+
+5. What are properties?
+
+6. What are values?
+
+
+7. What is the difference between “pixels” and “ems”?
 pixel is the absolute unit. 
 em is relative to the element's font size. 
 
-* How do CSS styles for a particular element get inherited? i.e. how does an element get its “default” styles?
+8. How do CSS styles for a particular element get inherited? i.e. how does an element get its “default” styles?
 an element gets style from these, in this hiarachical order: !important, inline style, id, its latest class, "body" element
 the former overrides the latter, with !important being the most powerful.
 
-* What are two CSS attributes you can change to push an element around on the page?
+9. What are two CSS attributes you can change to push an element around on the page?
 padding
 margin
 also: position???
 
-* What are the three different ways to include CSS in your project or use CSS to style a particular element?
+10. What are the three different ways to include CSS in your project or use CSS to style a particular element?
 
-* What is the “default stylesheet” or “user agent stylesheet”?
+11. What is the “default stylesheet” or “user agent stylesheet”?
 
-* Why use a CSS reset file?
-
-
-* What is the difference between CSS Grid and Flexbox?
+12. Why use a CSS reset file?
 
 
-* Describe the components of the CSS Box Model.
+13. What is the difference between CSS Grid and Flexbox?
 
 
-* In CSS, what is a breakpoint?
+14. Describe the components of the CSS Box Model.
+
+
+15. In CSS, what is a breakpoint?
 the point where the website content responds according the width of the device. 
 
-* What are the two main groups of CSS properties that control typography style?
+16. What are the two main groups of CSS properties that control typography style?
 font and text
 
-* What is the !important rule in CSS?
+17. What is the !important rule in CSS?
 used to override all other styles in CSS to make sure an element has specific CSS
 
-
+* Notes:
 <div> - groups content (no relationship between groups of content)
 <section> - groups related content (like a chapter of a book)
 <article> - groups independent, self-contained content (like a book); works well with blog entries, forum posts, or news articles.
