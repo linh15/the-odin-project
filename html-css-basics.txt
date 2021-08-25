@@ -1,7 +1,6 @@
 * Why do we separate HTML and CSS?
 HTML is the structure of the page, CSS is the design and styling of the page
 
-
 1. HTML 
 * What is a div and how are they used?
 div is division element, used to contain other elements for general purposes.
@@ -59,3 +58,9 @@ font and text
 
 * What is the !important rule in CSS?
 used to override all other styles in CSS to make sure an element has specific CSS
+
+
+<div> - groups content (no relationship between groups of content)
+<section> - groups related content (like a chapter of a book)
+<article> - groups independent, self-contained content (like a book); works well with blog entries, forum posts, or news articles.
+
