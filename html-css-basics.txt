@@ -66,10 +66,23 @@ font and text
 17. What is the !important rule in CSS?
 used to override all other styles in CSS to make sure an element has specific CSS
 
-* Notes:
+* Notes: HTML
 <div> - groups content (no relationship between groups of content)
 <section> - groups related content (like a chapter of a book)
 <article> - groups independent, self-contained content (like a book); works well with blog entries, forum posts, or news articles.
 
 - head element: contains the page's title, meta information, etc.
 - header (in the body): wraps introductory information or navigation links for its parent tag and works well around content that's repeated at the top on multiple pages.
+
+* Notes: CSS Flexbox 
+- Viewport units, like percentages, are relative units, but they are based off different items. 
+Viewport units are relative to the viewport dimensions (width or height) of a device
+percentages are relative to the size of the parent container element.
+
+- display: flex => putting item in a flex container 
+if flex-direction: row, items are put side-by-side in a row
+if flex-direction: column, items are stacked top-to-bottom in a column
+the direction (row/column) is called the main axis
+
+- justify-content property => aligns flex items along the main axis
+align-items property => align flex items along the cross axis
