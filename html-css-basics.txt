@@ -86,3 +86,6 @@ the direction (row/column) is called the main axis
 
 - justify-content property => aligns flex items along the main axis
 align-items property => align flex items along the cross axis
+
+* Notes: CSS Grid
+- In CSS Grid, the parent element is referred to as the container and its children are called items.
