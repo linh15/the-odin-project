@@ -89,3 +89,9 @@ align-items property => align flex items along the cross axis
 
 * Notes: CSS Grid
 - In CSS Grid, the parent element is referred to as the container and its children are called items.
+
+* CSS reset:
+Because each browser has its own default stylesheet, my CSS style may not be showed when users open it in different browsers.
+=> use CSS reset to always override the browser's default stylesheet and use my own CSS stylesheet instead
+https://www.youtube.com/watch?v=14Vb6tZCjEY&ab_channel=shreeve21
+
