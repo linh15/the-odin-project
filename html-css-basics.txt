@@ -47,12 +47,26 @@ also: position???
 10. What are the three different ways to include CSS in your project or use CSS to style a particular element?
 
 11. What is the “default stylesheet” or “user agent stylesheet”?
+the default stylesheet of the browser that shows the content if not overriden or if there is no stylesheet specified by the page or user 
 
 12. Why use a CSS reset file?
-
+to override the default stylesheet, to make the page look the way you want it to do
 
 13. What is the difference between CSS Grid and Flexbox?
+- Flexbox: one-dimensional layout, align content in either rows or columns, focus on content flow (content shapes the layout), for alignment, used when:
++ You have a small design to implement  
++ You need to align elements  
++ You need a content-first design  
 
+- Grid: two-dimensional layout, align content in both rows and columns, focus on content placement (layout shapes the content), for layout, used when:
++ You have a complex design to implement 
++ You need to have a gap between block elements
++ You need to overlap elements
++ You need a layout-first design
+
+https://blog.hubspot.com/website/css-grid-vs-flexbox
+https://webdesign.tutsplus.com/articles/flexbox-vs-css-grid-which-should-you-use--cms-30184
+https://blog.logrocket.com/flexbox-vs-css-grid/
 
 14. Describe the components of the CSS Box Model.
 
