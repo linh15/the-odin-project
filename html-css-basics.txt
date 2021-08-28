@@ -76,7 +76,10 @@ https://webdesign.tutsplus.com/articles/flexbox-vs-css-grid-which-should-you-use
 https://blog.logrocket.com/flexbox-vs-css-grid/
 
 14. Describe the components of the CSS Box Model.
-
+each box has 3 properties:
+- padding: space around content
+- border: solid line outside padding
+- margin: space around outside border 
 
 15. In CSS, what is a breakpoint?
 the point where the website content responds according the width of the device. 
