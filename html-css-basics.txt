@@ -15,7 +15,7 @@ div is division element, used to contain other elements for general purposes.
 alternative: alt=""
 
 6. For a responsive website, should it be designed mobile-first or desktop-first?
-
+https://brainleaf.com/blog/web-design/mobile-first-vs-desktop-first-how-to-choose-a-responsive-strategy/
 
 * CSS
 1. What are classes and IDs (and how are they different)?
@@ -45,6 +45,13 @@ margin
 also: position???
 
 10. What are the three different ways to include CSS in your project or use CSS to style a particular element?
+- inline
+add the style="" attribute to each HTML tag 
+- external
+create an external .css file and add reference to the HTML document
+- internal
+add <style> tag in a section of the HTML document
+https://www.hostinger.com/tutorials/difference-between-inline-external-and-internal-css
 
 11. What is the “default stylesheet” or “user agent stylesheet”?
 the default stylesheet of the browser that shows the content if not overriden or if there is no stylesheet specified by the page or user 
