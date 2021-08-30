@@ -1,3 +1,18 @@
+### Table of contents
+# Colors of text
+# To style an element
+# Font
+# Size
+# Borders
+# Background color
+# Margin
+# Padding
+# Units of measurement
+# Inheritance
+# Colors
+# Variable
+
+
 ## Colors of text
 Change the Color of Text
 
@@ -14,7 +29,6 @@ Use an id Attribute to Style an Element
 
 Use Attribute Selectors to Style Elements
 
-
 ## Font
 Change the Font Size of an Element
 
@@ -24,13 +38,8 @@ Import a Google Font
 
 Specify How Fonts Should Degrade
 
-
-
-
-
+## Size
 Size Your Images
-
-
 
 ## Borders
 Add Borders Around Your Elements
@@ -39,13 +48,8 @@ Add Rounded Corners with border-radius
 
 Make Circular Images with a border-radius
 
-
-
-
+## Background color
 Give a Background Color to a div Element
-
-
-
 
 ## Margin
 Adjust the Margin of an Element
@@ -56,7 +60,6 @@ Add Different Margins to Each Side of an Element
 
 Use Clockwise Notation to Specify the Margin of an Element
 
-
 ## Padding
 Adjust the Padding of an Element
 
@@ -64,16 +67,8 @@ Add Different Padding to Each Side of an Element
 
 Use Clockwise Notation to Specify the Padding of an Element
 
-
-
-
-
-
-
-
+## Units of measurement
 Understand Absolute versus Relative Units
-
-
 
 ## Inheritance
 Style the HTML Body Element
@@ -90,10 +85,6 @@ Override Class Declarations with Inline Styles
 
 Override All Other Styles by using Important
 
-
-
-
-
 ## Colors
 Use Hex Code for Specific Colors
 
@@ -105,10 +96,7 @@ Use RGB values to Color Elements
 
 Use RGB to Mix Colors
 
-
-
-
-
+## Variable
 Use CSS Variables to change several elements at once
 
 Create a custom CSS Variable
