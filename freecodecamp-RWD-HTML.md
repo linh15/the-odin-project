@@ -1,3 +1,16 @@
+### Table of contents
+# Elements
+# Comments
+# Elements
+# Images
+# Links
+# Lists
+# Forms + Buttons
+# Checkboxes
+
+
+
+
 ## Elements
 Say Hello to HTML Elements
 
@@ -7,6 +20,12 @@ Inform with the Paragraph Element
 
 Fill in the Blank with Placeholder Text
 
+## Elements
+Nest Many Elements within a Single div Element
+
+Declare the Doctype of an HTML Document
+
+Define the Head and Body of an HTML Document
 
 ## Comments
 Uncomment HTML
@@ -63,12 +82,3 @@ Create a Set of Checkboxes
 Use the value attribute with Radio Buttons and Checkboxes
 
 Check Radio Buttons and Checkboxes by Default
-
-
-
-## Elements 
-Nest Many Elements within a Single div Element
-
-Declare the Doctype of an HTML Document
-
-Define the Head and Body of an HTML Document
