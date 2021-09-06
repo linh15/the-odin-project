@@ -1,7 +1,7 @@
 * Why do we separate HTML and CSS?
 HTML is the structure of the page, CSS is the design and styling of the page
 
-* HTML 
+* HTML
 1. What is a div and how are they used?
 div is division element, used to contain other elements for general purposes.
 
@@ -32,8 +32,8 @@ https://brainleaf.com/blog/web-design/mobile-first-vs-desktop-first-how-to-choos
 
 
 7. What is the difference between “pixels” and “ems”?
-pixel is the absolute unit. 
-em is relative to the element's font size. 
+pixel is the absolute unit.
+em is relative to the element's font size.
 
 8. How do CSS styles for a particular element get inherited? i.e. how does an element get its “default” styles?
 an element gets style from these, in this hiarachical order: !important, inline style, id, its latest class, "body" element
@@ -46,7 +46,7 @@ also: position???
 
 10. What are the three different ways to include CSS in your project or use CSS to style a particular element?
 - inline
-add the style="" attribute to each HTML tag 
+add the style="" attribute to each HTML tag
 - external
 create an external .css file and add reference to the HTML document
 - internal
@@ -54,7 +54,7 @@ add <style> tag in a section of the HTML document
 https://www.hostinger.com/tutorials/difference-between-inline-external-and-internal-css
 
 11. What is the “default stylesheet” or “user agent stylesheet”?
-the default stylesheet of the browser that shows the content if not overriden or if there is no stylesheet specified by the page or user 
+the default stylesheet of the browser that shows the content if not overriden or if there is no stylesheet specified by the page or user
 
 12. Why use a CSS reset file?
 to override the default stylesheet, to make the page look the way you want it to do
@@ -63,10 +63,10 @@ to override the default stylesheet, to make the page look the way you want it to
 - Flexbox: one-dimensional layout, align content in either rows or columns, focus on content flow (content shapes the layout), for alignment, used when:
 + You have a small design to implement  
 + You need to align elements  
-+ You need a content-first design  
++ You need a content-first design 
 
 - Grid: two-dimensional layout, align content in both rows and columns, focus on content placement (layout shapes the content), for layout, used when:
-+ You have a complex design to implement 
++ You have a complex design to implement
 + You need to have a gap between block elements
 + You need to overlap elements
 + You need a layout-first design
@@ -75,14 +75,16 @@ https://blog.hubspot.com/website/css-grid-vs-flexbox
 https://webdesign.tutsplus.com/articles/flexbox-vs-css-grid-which-should-you-use--cms-30184
 https://blog.logrocket.com/flexbox-vs-css-grid/
 
-14. Describe the components of the CSS Box Model.
+14. Describe the components of the CSS **Box Model**.
 each box has 3 properties:
 - padding: space around content
 - border: solid line outside padding
-- margin: space around outside border 
+- margin: space around outside border
+CSS treats each HTML element as its own box, which is usually referred to as the CSS Box Model.
+Block-level items automatically start on a new line (think headings, paragraphs, and divs) while inline items sit within surrounding content (like images or spans). The default layout of elements in this way is called the **normal flow** of a document, but CSS offers the position property to override it. (https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/change-an-elements-relative-position)
 
 15. In CSS, what is a breakpoint?
-the point where the website content responds according the width of the device. 
+the point where the website content responds according the width of the device.
 
 16. What are the two main groups of CSS properties that control typography style?
 font and text
@@ -98,12 +100,12 @@ used to override all other styles in CSS to make sure an element has specific CS
 - head element: contains the page's title, meta information, etc.
 - header (in the body): wraps introductory information or navigation links for its parent tag and works well around content that's repeated at the top on multiple pages.
 
-* Notes: CSS Flexbox 
-- Viewport units, like percentages, are relative units, but they are based off different items. 
+* Notes: CSS Flexbox
+- Viewport units, like percentages, are relative units, but they are based off different items.
 Viewport units are relative to the viewport dimensions (width or height) of a device
 percentages are relative to the size of the parent container element.
 
-- display: flex => putting item in a flex container 
+- display: flex => putting item in a flex container
 if flex-direction: row, items are put side-by-side in a row
 if flex-direction: column, items are stacked top-to-bottom in a column
 the direction (row/column) is called the main axis
@@ -118,4 +120,3 @@ align-items property => align flex items along the cross axis
 Because each browser has its own default stylesheet, my CSS style may not be showed when users open it in different browsers.
 => use CSS reset to always override the browser's default stylesheet and use my own CSS stylesheet instead
 https://www.youtube.com/watch?v=14Vb6tZCjEY&ab_channel=shreeve21
-
