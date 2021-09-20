@@ -30,8 +30,16 @@ the same basic structure that all HTML documents have before anything else.
 - items in list: <li> </li>
 
 ## Link and image
-- link: <a> </a>
+- link: <a href="#"> </a> (anchor element)
   + absolute links: link to pages on other websites: protocol://domain/path. An absolute link will always contain the protocol and domain of the destination.
   eg: https://www.theodinproject.com/about
   + relative links: link to other pages in our own website, do not include the domain name, only include the file path to the other page, relative to the page you are creating the link on
   eg: pages/about.html
+    * notes: index.html is usually at the root folder/directory, then all other html files are in their own directory
+
+- image: <img src="#"> (img element, no closing tag)
+  + srs is simlar to href in link
+  + go up to the root directory: ../
+    eg: ../images/dog.jpg => go to the root directory, then to images, then access dog.jpg
+  + alt attribute: used for screen reader, or when the image cannot be loaded
+    eg: alt="black dog in grey sweater"
