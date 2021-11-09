@@ -319,29 +319,33 @@ https://developer.chrome.com/docs/devtools/
               JavaScript Debugging pane: various tools for inspecting the page's JavaScript. If your DevTools window is wide, this pane is displayed to the right of the Code Editor pane
       Step 3: Pause the code with a breakpoint
               - common method console.log(): insert a lot of console.log() statements into the code to inspect values as the script executes
-              - A breakpoint: lets you pause your code in the middle of its execution, and examine all values at that moment in time
+              - A breakpoint: lets you pause your code in the middle of its execution, and examine all values at that moment in time => help you find and fix bugs faster than the console.log() method
       Step 4: Step through the code
       Step 5: Set a line-of-code breakpoint
-      Step 6: Check variable values
-              Method 1: The Scope pane
-              Method 2: Watch Expressions
-              Method 3: The Console
+      Step 6: Check variable values: DevTools provides a lot of tools for examining variable values:
+              Method 1: The Scope pane:
+                        When you're paused on a line of code, the Scope pane shows you what local and global variables are currently defined, along with the value of each variable. It also shows closure variables, when applicable
+              Method 2: Watch Expressions:
+                        lets you monitor the values of variables over time
+              Method 3: The Console:
+                        evaluate arbitrary JavaScript statements. In terms of debugging, you can use the Console to test out potential fixes for bugs
 
       Step 7: Apply a fix
-
+      ===> This workflow only applies a fix to the code that is running in your browser. It won't fix the code for all users that visit your page. To do that, you need to fix the code that's on your servers.
 
       + Pause your code with breaking points
-
-
-
-
-
-
-
-
-
-
-
+          - Overview of when to use each breakpoint type:
+          - Line-of-code breakpoints
+                Line-of-code breakpoints in your code
+          - Conditional line-of-code breakpoints
+                Manage line-of-code breakpoints
+          - DOM change breakpoints
+                Types of DOM change breakpoints
+          - XHR/Fetch breakpoints
+          - Event listener breakpoints
+          - Exception breakpoints
+          - Function breakpoints
+                Make sure the target function is in scope
 
 
 ## Chrome DevTools tricks
@@ -397,3 +401,7 @@ https://www.youtube.com/watch?v=xkzDaKwinA8&ab_channel=WesBos
 - count: prints the number of times that this particular call to count() has been called.
 
   console.count("Hello"); // Hello: 1
+
+- timing: used to start a timer in order to track the duration of a particular operation. End the timing operation by calling console.timeEnd() and passing in the unique name of the timer
+  console.time(label);
+  console.timeEnd(label);
