@@ -531,3 +531,39 @@ https://developer.mozilla.org/en-US/docs/Glossary/Call_stack
         + Any functions that are called by that function are added to the call stack further up (top of the stack), and run where their calls are reached.
         + When the current function is finished, the interpreter takes it off the stack and resumes execution where it left off in the last code listing.
         + If the stack takes up more space than it had assigned to it, it results in a "stack overflow" error.
+
+
+
+# 5. Problem solving
+- Problem solving is the core thing software developers do. The programming languages and tools they use are secondary to this fundamental skill.
+      “Problem solving is writing an original program that performs a particular set of tasks and meets all stated constraints.” - Think Like a Programmer - V. Anton Spraul
+
+  + The set of tasks can range from solving small coding exercises all the way up to building a social network site like Facebook or a search engine like Google. Each problem has its own set of constraints, for example, high performance and scalability may not matter too much in a coding exercise but it will be vital in apps like Google that need to service billions of search queries each day.
+
+  + The best way to improve your problem solving ability is by building experience by making lots and lots of programs. The more practice you have the better you’ll be prepared to solve real world problems.
+
+- Problem solving process:
+  + Understand the Problem: understand exactly what the problem is.
+        - Don’t understand the problem:
+              -> won’t know when you’ve successfully solved it
+              -> may waste a lot of time on a wrong solution
+        - To gain clarity and understanding of the problem:
+              -> write it down on paper
+              -> reword it in plain English until it makes sense to you
+              -> draw diagrams if that helps.
+              -> When you can explain the problem to someone else in plain English, you understand it.
+  + Plan: plan out how you’re going to solve the problem
+        - Ask some questions:
+              -> User interface? If yes, how? What functionality? -> Sketch this on paper
+              -> What inputs? Data from user input or from somewhere else?
+              -> Desired output?
+              -> Given inputs -> what steps needed to return the desired output?
+        - Write out an algorithm to solve the problem: a recipe for solving a particular problem -> defines the steps that need to be taken by the computer to solve a problem in pseudo code.
+
+  + Pseudo code: write out the logic for your program in natural language instead of code => slow down and think through the steps your program will have to go through to solve the problem
+
+  + Divide and conquer:
+        - Break the big problem down
+        - Solve each of the smaller problems until you’ve solved the big problem, starting with the simplest
+
+- When stuck: https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/
