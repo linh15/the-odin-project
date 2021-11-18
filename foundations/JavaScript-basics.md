@@ -605,3 +605,150 @@ https://developer.mozilla.org/en-US/docs/Glossary/Call_stack
 - Basic programming techniques - repetitive programming: https://ocw.mit.edu/resources/res-tll-004-stem-concept-videos-fall-2013/videos/problem-solving/basic-programming-techniques/
 
 - Book for references: Think Like a Programmer: An Introduction to Creative Problem Solving by V. Anton Spraul
+
+
+# 6. Understanding Errors
+- The Anatomy of an Error:
+      + An error:
+            - a type of object built into the JS language
+            - consisting of a name/type and a message
+            - contain crucial information that can assist you in locating the code responsible for the error, determining why you have this error, and resolving the error
+      + The first part: displays the type of error. This provides the first clue as to what you’re dealing with
+      + The next part of an error gives us the name of the file in which you can find the error (in this case, our script.js), and also the line number. This allows you to easily navigate to the problematic line in your code.
+      + Another important part of an error is the stack trace. This helps you understand when the error was thrown in your application, and what functions were called that led up to the error.
+
+-  Common Types of Errors:
+      + Syntax Error: occurs when the code you are trying to run is not written correctly, i.e., in accordance with the grammatical rules of JavaScript.
+      + Reference Error: arises because whatever variable you are trying to reference does not exist (within the current scope) - or it has been spelt incorrectly
+      + Type Error: occurs when
+            - an operand or argument passed to a function is incompatible with the type expected by that operator or function
+            - attempting to modify a value that cannot be changed
+            - attempting to use a value in an inappropriate way
+        => consider the data type you are trying to run a method or operation against. You’ll likely find that it is not what you think, or the operation or method is not compatible with that type.
+
+- Tips for Resolving Errors:
+      + Read the error carefully, try to understand it on your own.
+      + Google the error!
+            => a fix or explanation on StackOverflow or in the documentation
+            => or more clarity as to why you are receiving this error.
+      + Use the debugger: set breakpoints, view the value of any given variable at any point in your application’s execution, step through code line by line, etc.
+      + Make use of the console:
+            - console.log() is great for getting immediate feedback without needing to step through your functions
+            - other useful methods such as: https://www.w3schools.com/jsref/obj_console.asp
+                  console.table(): Displays tabular data as a table
+                  console.trace(): Outputs a stack trace to the console
+
+
+- Errors VS. Warnings:
+      + Errors will stop the execution of your program or whatever process you may be attempting to run and prevent further action.
+            - typically shown in red
+      + Warnings, are messages that provide you insight on potential problems that may not necessarily crash your program at runtime, or at all!
+            - not as significant as errors
+            - more likely to be informational
+            - should be addressed if possible and as soon as possible
+            - typically shown in yellow
+
+
+- 2 main types of errors: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong
+      + Syntax errors:
+            - spelling errors in your code that actually cause the program not to run at all, or stop working part way through
+            - you will usually be provided with some error messages too
+            - easier to fix: know what the error messages mean and familiar with the right tools
+      + Logic errors:
+            - errors where the syntax is actually correct but the code is not what you intended it to be, meaning that program runs successfully but gives incorrect results
+            - there usually isn't an error message to direct you to the source of the error
+            - harder to fix
+
+
+- JavaScript error reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors
+
+
+# 7. Project: Rock-Paper-Scissors
+First version of the game, no UI, play in console.
+
+# 8. Clean code
+- Why writing clean code?
+      + SO MUCH more time reading code than writing it
+      + learn to write readable code => save time to use, maintain, or further develop your code
+- What constitutes great JavaScript code: the most important thing CONSISTENCY
+- Rules of thumb:
+      + Indentation: consistent. Atoms and others use 2 spaces for indentation.
+      + Semicolons: always add it. Even though it's optional, JS compiler can add them if missing but this functionality can break and cause bugs.
+      + Line length:
+            - limiting the length of each line
+            - general rule: manually break lines that are longer than about 80 characters
+            - watch out the line in code editors displaying the threshold
+            - indent the second line 2 levels
+            - break after an operator or a comma
+      + Name things:
+            - be descriptive and always use camelCase
+            - keep consistent and easy to read
+            - variables: begin with a noun or an adjective (noun phrase)
+            - functions: begin with a verb
+            - in loops or callback functions: ok to use single characters for variable names, but not elsewhere
+
+-  10 principles for clean code (https://onextrapixel.com/10-principles-for-keeping-your-programming-code-clean/):
+        1. Revise Your Logic Before Coding:
+            + verify the logic behind lines of code before typing
+            + use flow diagrams or written pseudo-code
+            + writing it down first can clarify many doubts or insecurities about complex functionality
+        2. Clearly Expose the Structure of the Page:
+            + name DIV containers after their destined content => give them a representative ID
+            + eg. <div id='main-container'>, <div id='footer'>,...
+        3. Use the Correct Indentation:
+            + easier to distinguish the exact place where an element is opened and closed
+        4. Write Explanatory Comments
+            + very effective way of code documentation
+            + easy, fast, and very straight-to-the-point
+            + can be read at the exact moment of doubt
+        5. Avoid Abusing Comments:
+            + Examples of bad comments:
+              - Writing explanatory notes to self (e.g. /* Will finish this later… */).
+              - Blaming stuff on other people (e.g. /* John coded this. Ask him. */).
+              - Writing vague statements (e.g. /* This is another math function. */).
+              - Erasing chunks of code: not sure of erasing things and comment that code instead.
+            + Examples of good comments:
+               - Authoring specifications (e.g. /* Coded by John, November 13th 2010 */).
+               - Detailed statements on the functionality of a method or procedure (e.g. /* This function validates the login form with the aid of the e-mail check function */).
+               - Quick notifications or labels that state where a recent change was made (e.g. /* Added e-mail validation procedure */).
+        6. Avoid Extremely Large Functions:
+            + break up large functions into smaller ones
+        7. Use Naming Standards for Functions and Variables
+            + make them descriptive enough to give a general idea of what it does or what it’s for
+        8. Treat Changes with Caution: when a need for adding, removing, or changing something => not meddle with previous efforts for maintaining the code clean and ordered.
+            + Keeping the correct indentations (e.g. when inserting an IF clause, its contents’ indentations will be augmented).
+            + Commenting on the modification made or broadening the existing comments.
+            + Respecting standards in use.
+        9. Avoid Indiscriminate Mixing of Coding Languages:
+            + examples:
+                - in-line CSS styling => huge element tags with an embedded STYLE property
+                - scattered JavaScript tags with short procedures within them => interruptions in the flow of the structure
+            + => appropriately divide different coding languages
+        10. Summarize Your Imports
+            + additional coding languages imported from different files => summarize the ones in the same language into one or two
+            + eg. many CSS style sheets => summarize in one => import
+            + => save space, look clean, save loading time, more efficient
+
+- Coding Without Comments (https://blog.codinghorror.com/coding-without-comments/):
+      + Always write your code as if comments didn't exist:
+       => forces you to write your code in the simplest, plainest, most self-documenting way you can humanly come up with.
+      + When rewritten, refactored, and rearchitected your code a dozen times to make it easy for your fellow developers to read and understand and can't possibly imagine any conceivable way your code could be changed to become more straightforward and obvious
+      => then, and only then, add a comment explaining what your code does.
+
+- Code Tells You How, Comments Tell You Why (https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/):
+      + No matter how simple, concise, and clear your code may end up being, it's impossible for code to be completely self-documenting. Comments can never be replaced by code alone.
+      + Code can't explain why the program is being written, and the rationale for choosing this or that method.
+      + Code cannot discuss the reasons certain alternative approaches were taken.
+
+- Beautiful JavaScript: Easily Create Chainable (Cascading) Methods for Expressiveness (https://web.archive.org/web/20190211152543/https://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/):
+      + Chaining Methods, also known as Cascading: eg. $("#wrapper").fadeOut().html("Welcome, Sir").fadeIn();
+            - refers to repeatedly calling one method after another on an object, in one continuous line of code.
+            - This technique abounds in jQuery and other JavaScript libraries and it is even common in some JavaScript native methods.
+            - It allows us to read code like a sentence, flowing gracefully across the page. It also frees us from the monotonous, blocky structures we usually construct.
+      + Why Use Cascading in JavaScript?
+            - There is no need to create temporary variables to save each step of the process.
+            - every line of code clearly and succinctly expresses what it is doing, particularly when the name of each method is defined using verbs.
+            - Our code is more maintainable because we have simple, lean, specialized methods.
+            - one can easily read the “chainable” code, effortlessly type it, and comfortably understand it.
+
+- Airbnb style guide (https://github.com/linh15/javascript): Airbnb JavaScript Style Guide - A mostly reasonable approach to JavaScript: guide to write clean code in JS. 
