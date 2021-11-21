@@ -751,4 +751,126 @@ First version of the game, no UI, play in console.
             - Our code is more maintainable because we have simple, lean, specialized methods.
             - one can easily read the “chainable” code, effortlessly type it, and comfortably understand it.
 
-- Airbnb style guide (https://github.com/linh15/javascript): Airbnb JavaScript Style Guide - A mostly reasonable approach to JavaScript: guide to write clean code in JS. 
+- Airbnb style guide (https://github.com/linh15/javascript): Airbnb JavaScript Style Guide - A mostly reasonable approach to JavaScript: guide to write clean code in JS.
+
+# 9. Fundamentals 4
+
+## Arrays:
+#### Array basics (https://www.w3schools.com/js/js_arrays.asp)
+- Arrays:
+      + ordered collections of items (Strings, numbers, or other things)
+      + An array can hold many values under a single name, and you can access the values by referring to an index number.
+
+- Create an array:
+      + array literal: const array_name = [item1, item2, ...];      
+      + common practice to declare arrays with the const keyword.
+      + Spaces and line breaks are not important. A declaration can span multiple lines:
+      + can create an array, and then provide the elements:
+            const cars = [];
+            cars[0]= "Saab";
+            cars[1]= "Volvo";
+      + can use JavaScript Keyword new but not recommended:
+            const cars = new Array("Saab", "Volvo", "BMW");
+
+- Access and change array elements: refer to the index number starting at 0:
+      const cars = ["Saab", "Volvo", "BMW"];
+      let car = cars[0];
+      cars[0] = "Opel";
+
+- Access the full array: by referring to the array name:
+      const cars = ["Saab", "Volvo", "BMW"];
+      document.getElementById("demo").innerHTML = cars;
+
+- Array vs object:
+
+| Array | Object |
+|---|---|
+|a special type of objects, typeof operator in JavaScript returns "object" for arrays, but best described as arrays | objects |
+| use numbers to access its "elements": <br> const person = ["John", "Doe", 46]; <br> person[0]; // John | use names to access its "members" <br> const person = {firstName:"John", lastName:"Doe", age:46}; <br> person.firstName // John|
+| use numbered indexes | use named indexes.|
+| used when you want the element names to be numbers | used when you want the element names to be strings (text) |
+
+
+- Array elements: can be object, function and array
+      myArray[0] = Date.now; // object
+      myArray[1] = myFunction; // function
+      myArray[2] = myCars; // array
+
+
+- Array built-in properties:
+      + length Property: returns the length of an array (the number of array elements)
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            let length = fruits.length; // 4
+        => always one more than the highest array index
+
+
+- Loop array elements:
+      + use a for loop
+      + use the Array.forEach() function:
+            myArray.forEach(myFunction); // call myFunction for each element of myArray
+
+- Associative array (hash): array with named indexes
+      + JS doesn't support hashes, arrays always use numbered indexes
+      + If named indexes are used, JavaScript will redefine the array to an object => some array methods and properties will produce incorrect results
+
+#### Array methods (https://www.w3schools.com/js/js_array_methods.asp)
+https://replit.com/@linh15/array-methods
+
+- Output an array: JavaScript automatically converts an array to a comma separated string when a primitive value is expected. This is always the case when you try to output an array.
+
+
+## Loops
+(https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)
+
+#### Why loop?
+- Programming loops are all to do with doing the same thing over and over again, which is termed iteration in programming speak.
+- A loop usually has one or more of the following features:
+      + A counter, which is initialized with a certain value
+      + A condition, which is a true/false test to determine whether the loop continues to run, or stops — usually when the counter reaches a certain value.
+      + An iterator, which generally increments the counter by a small amount on each successive loop until the condition is no longer true.
+
+#### for loop construct:
+
+      for (initializer; condition; final-expression) {
+        // code to run ;
+      }
+
+#### infinite loop:
+you must make sure that the initializer is incremented or, depending on the case, decremented, so that it eventually reaches the point where the condition is not true. If not, the loop will go on forever, and either the browser will force it to stop, or it will crash
+
+### Exist loop with break:
+-  a break statement will immediately exit the loop and make the browser move on to any code that follows it
+
+#### Skip iteration with continue:
+- The continue statement works in a similar manner to break, but instead of breaking out of the loop entirely, it skips to the next iteration of the loop => skip the lines after it and start the next iteration
+
+#### while
+
+      initializer;
+      while (condition) {
+        // code to run;
+
+        final-expression;
+      }
+
+      => similar way to the for loop
+      => except that the initializer variable is set before the loop
+      => and the final-expression is included inside the loop after the code to run
+
+#### do ... while  
+
+      initializer;
+      do {
+        // code to run;
+
+        final-expression;
+      } while (condition);
+
+      => the condition comes after everything else, wrapped in parentheses and preceded by a while keyword
+      => the code inside the curly braces is always run once before the check is made to see if it should be executed again
+      => in while and for, the check comes first, so the code might never be executed
+
+
+## Test Driven Development (TDD):
+- write automated tests that describe how your code should work before you actually write the code
+- much more productive than writing code without tests
