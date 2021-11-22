@@ -874,3 +874,48 @@ you must make sure that the initializer is incremented or, depending on the case
 ## Test Driven Development (TDD):
 - write automated tests that describe how your code should work before you actually write the code
 - much more productive than writing code without tests
+
+
+## Practice
+#### 04_removeFromArray
+- arguments object
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
+
+      + Array-like object accessible inside functions
+      + contains the values of the arguments passed to that function
+      + array-like object: arguments has a length property and properties indexed from zero, but it doesn't have Array's built-in methods like forEach() or map()
+            function func(a, b, c) {
+              console.log(arguments[0]); // a
+              console.log(arguments[1]); // b
+              console.log(arguments[2]); // c
+            }
+
+      + useful for functions called with more arguments than they are formally declared to accept => example function accepts any number of string arguments and returns the longest one:
+            function longestString() {
+              let longest = '';
+              for (let i = 0; i < arguments.length; i++) {
+                if (arguments[i].length > longest.length) {
+                  longest = arguments[i];
+                }
+              }
+              return longest;
+            }
+
+        + has to be converted to array to use array methods:
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
+            function func() {
+              return args = Array.from(arguments);
+            }
+            func(a,b,c); // [a,b,c]
+
+
+- rest parameter:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+      + allows a function to accept an indefinite number of arguments as an array
+            function f(a, b, ...theArgs) {
+              console.log(theArgs);
+             }
+            f(a,b,c,d,e,f); // [c,d,e,f]
+      + is the last parameter in a function definition
+      + prefixed with "..." (three U+002E FULL STOP characters), which will cause all remaining (user supplied) parameters to be placed within a standard JavaScript array
+      + Only the last parameter in a function definition can be a rest parameter
