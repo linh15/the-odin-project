@@ -921,7 +921,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest
       + Only the last parameter in a function definition can be a rest parameter
 
 
-# 9. DOM manipulation
+# 10. DOM manipulation
 https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/dom-manipulation#dom---document-object-model
 
 #### DOM - Document Object Model
@@ -1025,7 +1025,49 @@ HTML code is parsed by a web browser => converted to the DOM - a tree of nodes =
       keydown
       keyup
 
+# 11. Revisit Rock-Paper-Scissors
 
+# 12. Project Etch-A-Sketch
+
+- Loop in JS to create 16x16 grid: https://code-boxx.com/create-grid-javascript/
+- Create 16 columns automatically with repeat() in CSS grid: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#track_listings_with_repeat_notation
+- Create responsive square divs with grid: https://dev.to/stretch0/a-grid-layout-with-responsive-squares-59c6
+- onmouseover in JS: https://www.w3schools.com/jsref/event_onmouseover.asp
+- addEventListener on all elements of a class: https://stackoverflow.com/questions/19655189/javascript-click-event-listener-on-class
+
+# 13. Fundamentals 5
+## Objects
+
+#### Basics
+- Object:  
+      + a collection of related data and/or functionality
+      + usually consists of several variables (properties) and functions (methods)
+
+      + Syntax:
+      const objectName = {
+      member1Name: member1Value,
+      member2Name: member2Value,
+      member3Name: member3Value
+      };
+
+      + The value of an object member can be pretty much anything
+      + data items => object's properties
+      + functions that allow the object to do something with that data => object's methods
+      + object literal: literally write out the object contents to create it.
+      + easier to work with than an array, when you want to identify individual items by name.
+
+
+#### Dot notation
+
+#### Bracket notation
+
+#### Set object members
+
+#### this
+
+
+
+## Intermediate/Advanced Array
 
 # Notes: Additional resources that I haven't worked on:
 - Regular expressions: https://www.youtube.com/playlist?list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD
