@@ -1118,6 +1118,9 @@ for (let prop in object) {
 => loop through all properties in the object and apply the code on each of them
 
 ## Intermediate/Advanced Array
+(https://www.w3schools.com/js/js_array_sort.asp)
+(https://www.w3schools.com/js/js_array_iteration.asp)
+https://replit.com/@linh15/array-methods
 
 Array.prototype.filter()
 Array.prototype.map()
